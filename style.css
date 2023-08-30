@@ -84,6 +84,11 @@ nav h2 {
 }
 
 /* Style for the dropdown menu */
+.dropdown-container {
+    display: inline-block;
+    margin: 0 10px; /* Adjust margin as needed */
+}
+
 .dropdown {
     display: flex;
     padding: 8px;
@@ -91,10 +96,10 @@ nav h2 {
     position: relative;
     white-space: nowrap;
     cursor: pointer;
-    position: relative;
     background-color: rgb(221,245,253);
     margin-top: 10px;
-    border: 1px solid #c8c8c8; /* You can adjust the width and color */
+    border: 1px solid #c8c8c8; 
+    float: left; /* Float the dropdowns to the left */
 }
 
 .dropdown-menu {
@@ -102,10 +107,21 @@ nav h2 {
     position: absolute;
     top: 100%;
     left: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: white;
     list-style: none;
-    padding: 1em;
+    border: 1px solid #c8c8c8; 
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    
+}
+
+.dropdown-menu li {
+    padding: 10px 15px; /* Adjust padding as needed */
+    transition: background-color 0.3s; /* Add a smooth transition */
+}
+
+.dropdown-menu li:hover {
+    background-color: rgb(221,245,253); /* Change background color on hover */
 }
 
 .dropdown:hover .dropdown-menu {
