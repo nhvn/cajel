@@ -1,2 +1,3 @@
 # cajel
-OA for Medimentor
+OA for MediMentor
+This is a required take-home project from MediMentor.
